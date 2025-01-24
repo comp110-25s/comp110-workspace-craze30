@@ -1,0 +1,22 @@
+def bingus_bungus(apples: int) -> float:
+    """Apples to Oranges"""
+    return (apples * 1.5) + 0.3
+
+
+print(bingus_bungus(apples=5))
+
+
+def oranges_and_apples(apples: int, oranges: int) -> float:
+    """Add Oranges and Apples"""
+    return apples + oranges
+
+
+print(oranges_and_apples(apples=5, oranges=6))
+
+
+def perimeter(length: float, width: float) -> float:
+    """Calculate the perimeter of a rectangle"""
+    return (length * 2) + (width * 2)
+
+
+print(perimeter(length=10.0, width=8.0))
