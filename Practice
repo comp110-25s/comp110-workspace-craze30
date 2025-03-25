@@ -20,3 +20,31 @@ def perimeter(length: float, width: float) -> float:
 
 
 print(perimeter(length=10.0, width=8.0))
+
+
+SECRET: str = "bingus"
+
+def guess_secret(word: str, secret: str, idx: int = 0) -> bool:
+    """Guess the secret word"""
+    if len(word) != len(secret)
+        print("Words are different lengths")
+        return False
+    if idx < len(word) :
+        if word[idx] != secret[idx] :
+            print(f"{word[idx]} isnt the secret word's next letter")
+            return False
+        else:
+            print(f"{word[idx]} is at index {idx} for both words! Checking next letters...")
+            return guess_secret(word=word, secret=secret, idx=idx + 1)
+    print("They are the same word!")
+    return True
+
+
+print(guess_secret(word=input"What is your word? "), secret=SECRET))
+print(guess_secret(word=input("What is your word? "), secret=SECRET, idx=0))
+
+my_numbers: list[float] = list() # constructor; return []
+my_numbers: list[float] = [] # literal
+
+game_points: list[int] = [102, 86, 94]
+print(game_points)
